@@ -13,7 +13,9 @@ a{
 
 .titulo{
     color: var(--rey);
-    margin-left: 10%;
+    text-align: center;
+    /* margin-left: 10%; */
+    /* margin-top: 2rem; */
 }
 
 .menu__izq{
@@ -53,7 +55,23 @@ a{
     color: white;
 }
 
+.fecha{
+    /* float: right; */
+    margin-top: 3%;
+    /* margin-left: 1%; */
+}
+
+#fecha{
+    margin-left: 2%;
+    width: 90px;
+}
+
+
 .textoGeneral{
     color: var(--rey);
     text-transform: uppercase;
+}
+
+select:hover{
+    border: 3px solid var(--dorado);
 }

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="vista/asset/css/cabezote.css">
     <link rel="stylesheet" href="vista/asset/css/colaborador.css">
     <link rel="stylesheet" href="vista/asset/css/formulario.css">
+    <link rel="stylesheet" href="vista/asset/css/puesto.css">
+    <link rel="stylesheet" href="vista/asset/css/prestaciones.css">
 </head>
   <body>
 
@@ -22,9 +24,9 @@
             
             <nav class="menu col-xl-12">
                 <ul class="menu__areas">
-                    <li><a href="">Información del colaborador</a></li>
-                    <li><a href="">Información del puesto</a></li>
-                    <li><a href="">Información de las prestaciones</a></li>
+                    <li><a href="#colaborador">Información del colaborador</a></li>
+                    <li><a href="#puesto">Información del puesto</a></li>
+                    <li><a href="#prestaciones">Información de las prestaciones</a></li>
                     <li><a href="">Adjunto</a></li>
                 </ul>
             </nav>
@@ -55,17 +57,18 @@
             <li><a href= ""> <i class="izq__cubo bi bi-box"></i>plataforma<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
           </ul>
         </div>
-
       </div>
+
+      <!-- COLABORADOR -->
 
       <div id="colaborador" class="container-fluid">
         <div class="container">
-          <h1 class="titulo">Información del colabolador</h1>
+          <div class="row">
+            <div class="col-xl-3"></div> <!--Puse este para "respetar" el espacio del menu dorado. Ya que ese tiene un width de col-xl-3-->
           
-          <!-- <div class="row"> -->
-            
-            <!-- <div class="colaborador">
-              
+            <div class="colaborador col-xl-9">
+
+              <h2 class="titulo">Información del colabolador</h2> 
               <div class="fecha">
                 <spam class="textoGeneral">Por favor ingresa tu fecha de nacimiento</spam>
                 <select name="" id="fecha">
@@ -80,10 +83,16 @@
                   <option value="">Año</option>
                 </select>
               </div>
-            </div> -->
+              
+            </div>
+          </div>
+          
+          <!-- FORMULARIO -->
 
             <form action="" id="formulario">
               <div class="row">
+
+                <div class="col-xl-3"></div> <!--Puse este para "respetar" el espacio del menu dorado. Ya que ese tiene un width de col-xl-3-->
 
                 <div class="col-xl-3 form-row">
                   <input id="" type="text" required aria-describedby="emailHelp">
@@ -123,6 +132,7 @@
 
                 <!-- <div class="col-xl-12"> -->
                   <div class="row">
+                    <div class="col-xl-3"></div> <!--Puse este para "respetar" el espacio del menu dorado. Ya que ese tiene un width de col-xl-3-->
                     <div class="col-xl-3 form-row">
                       <input id="" type="text" required aria-describedby="emailHelp">
                       <label id="formularioB" alt="label" data-placeholder="Banco"></label>
@@ -138,6 +148,7 @@
                       <label id="formularioB" alt="label" data-placeholder="Clave"></label>
                     </div>
 
+                    <div class="col-xl-3"></div> <!--Puse este para "respetar" el espacio del menu dorado. Ya que ese tiene un width de col-xl-3-->
                     <div class="col-xl-9 form-row">
                       <input id="" type="text" required aria-describedby="emailHelp">
                       <label id="formularioB" alt="label" data-placeholder="Dirección"></label>
@@ -149,12 +160,139 @@
               </div>
 
             </form>
-          <!-- </div> -->
+          
         </div>
       </div>
     </div>
 
-  
+    <!-- PUESTO -->
+
+    <div class="container-fluid" id="puesto">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3"></div>
+          <div class="puesto col-xl-9">
+            <h2 id="abc" class="titulo">Información sobre el puesto</h2>
+
+            <div class="fecha">
+              <spam class="textoGeneral">Por favor ingresa la fecha de ingreso</spam>
+              <select name="" id="fecha">
+                <option value="">Día</option>
+              </select>
+
+              <select name="" id="fecha">
+                <option value="">Mes</option>
+              </select>
+
+              <select name="" id="fecha">
+                <option value="">Año</option>
+              </select>
+            </div>
+
+            <div class="row">
+
+              <div class="col-xl-6">
+                <select name="" id="empleado">
+                  <option value="">Selecciona el tipo de empleado</option>
+                </select>
+
+                <div class="formPuesto form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Empresa"></label>
+                </div>
+              </div>
+              
+              <div class="col-xl-6">
+                <select name="" id="empleado">
+                  <option value="">Selecciona el estatus del empleado</option>
+                </select>
+
+                <div class="formPuesto form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Puesto"></label>
+                </div>
+
+              </div>
+
+              <div class="col-xl-12">
+                <select name="" id="departamentos">
+                  <option value="">Selecciona el (los) departamentos</option>
+              </select>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRESTACIONES -->
+
+    <div class="container-fluid" id="prestaciones">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3"></div>
+          <div class="puesto col-xl-9">
+            <h2 class="titulo">Información sobre las prestaciones</h2>
+
+            <div class="fecha">
+              <spam class="textoGeneral">Por favor ingresa la fecha de alta al IMSS</spam>
+              <select name="" id="fecha">
+                <option value="">Día</option>
+              </select>
+
+              <select name="" id="fecha">
+                <option value="">Mes</option>
+              </select>
+
+              <select name="" id="fecha">
+                <option value="">Año</option>
+              </select>
+            </div>
+
+            <div class="row">
+
+              <div class="prestacionesA col-xl-6">
+                <select name="" id="prestacion">
+                  <option value="">Selecciona el tipo de empleado</option>
+                </select>
+              </div>
+
+              <div class="prestacionesA col-xl-6">
+                <select name="" id="prestacion">
+                  <option value="">Vacaciones disponibles</option>
+                </select>
+              </div>
+
+              <div class="prestacionesB col-xl-6">
+                <div class=" form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="NSS"></label>
+                </div>
+
+                <div class=" form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Salario IMSS"></label>
+                </div>
+              </div>
+
+              <div class="prestacionesB col-xl-6">
+                <div class=" form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Número de alta"></label>
+                </div>
+
+                <div class=" form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Salario bruto"></label>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>

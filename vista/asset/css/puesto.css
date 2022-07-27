@@ -1,0 +1,17 @@
+#puesto{
+    margin-top: 5rem;
+}
+
+.formPuesto{
+    margin-top: 2rem;
+}
+
+#empleado{
+    width: 70%;
+    margin-top: 2rem;
+    margin-left: 15%;
+}
+
+#departamentos{
+    width: 100%;
+}

@@ -10,7 +10,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 3px;
-    color: var(--cielo);
+    color: var(--claro);
     border: 2px solid var(--cielo);
     border-radius: 4px;
     transition: all 0.5s ease-in-out;

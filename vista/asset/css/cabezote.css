@@ -2,6 +2,7 @@
     background-color: var(--cielo);
     height: 4rem;
     position: fixed;
+    z-index: 100;
 }
 
 .menu__areas{
