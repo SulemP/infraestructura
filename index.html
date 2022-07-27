@@ -7,25 +7,154 @@
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="vista/asset/css/global.css">
     <link rel="stylesheet" href="vista/asset/css/cabezote.css">
+    <link rel="stylesheet" href="vista/asset/css/colaborador.css">
+    <link rel="stylesheet" href="vista/asset/css/formulario.css">
 </head>
   <body>
+
+    <!-- CABEZOTE -->
     
     <div id="cabezote" class="container-fluid">
         <div class="container">
+            
             <nav class="menu col-xl-12">
                 <ul class="menu__areas">
-                    <li><a href=""></a>Colaborador</li>
-                    <li><a href=""></a>Puesto</li>
-                    <li><a href=""></a>Prestaciones</li>
-                    <li><a href=""></a>Adjunto</li>
+                    <li><a href="">Información del colaborador</a></li>
+                    <li><a href="">Información del puesto</a></li>
+                    <li><a href="">Información de las prestaciones</a></li>
+                    <li><a href="">Adjunto</a></li>
                 </ul>
             </nav>
+            
         </div>
     </div>
 
+    <!-- MENÚ IZQUIERDO -->
 
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="menu__izq col-xl-3">
+          <ul class="izquierda">
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>mis proyectos <i class="izq__flecha bi bi-chevron-right"></i></a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>usuarios<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>presupuesto<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>proyecto<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>administración<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>bancos<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>recursos humanos<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>te escuchamos<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>leads<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>marcadotécnia<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>reportes<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>calidad<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>catálogos<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+            <li><a href= ""> <i class="izq__cubo bi bi-box"></i>plataforma<i class="izq__flecha bi bi-chevron-right"></i> </a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="colaborador" class="container-fluid">
+        <div class="container">
+          <h1 class="titulo">Información del colabolador</h1>
+          
+          <!-- <div class="row"> -->
+            
+            <!-- <div class="colaborador">
+              
+              <div class="fecha">
+                <spam class="textoGeneral">Por favor ingresa tu fecha de nacimiento</spam>
+                <select name="" id="fecha">
+                  <option value="">Día</option>
+                </select>
+
+                <select name="" id="fecha">
+                  <option value="">Mes</option>
+                </select>
+
+                <select name="" id="fecha">
+                  <option value="">Año</option>
+                </select>
+              </div>
+            </div> -->
+
+            <form action="" id="formulario">
+              <div class="row">
+
+                <div class="col-xl-3 form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioA" alt="label" data-placeholder="Nombre"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Nacionalidad"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioC" alt="label" data-placeholder="Estado civil"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioD" alt="label" data-placeholder="Correo electrónico"></label>
+                </div>
+
+                <div class="col-xl-3 form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioA" alt="label" data-placeholder="CURP"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Teléfono móvil"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioC" alt="label" data-placeholder="Contacto de emergencia"></label>
+                </div>
+
+                <div class="col-xl-3 form-row">
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioA" alt="label" data-placeholder="RFC"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioB" alt="label" data-placeholder="Teléfono particular"></label>
+
+                  <input id="" type="text" required aria-describedby="emailHelp">
+                  <label id="formularioC" alt="label" data-placeholder="Teléfono de emergencia"></label>
+                </div>
+
+                <!-- <div class="col-xl-12"> -->
+                  <div class="row">
+                    <div class="col-xl-3 form-row">
+                      <input id="" type="text" required aria-describedby="emailHelp">
+                      <label id="formularioB" alt="label" data-placeholder="Banco"></label>
+                    </div>
+
+                    <div class="col-xl-3 form-row">
+                      <input id="" type="text" required aria-describedby="emailHelp">
+                      <label id="formularioB" alt="label" data-placeholder="Cuenta"></label>
+                    </div>
+
+                    <div class="col-xl-3 form-row">
+                      <input id="" type="text" required aria-describedby="emailHelp">
+                      <label id="formularioB" alt="label" data-placeholder="Clave"></label>
+                    </div>
+
+                    <div class="col-xl-9 form-row">
+                      <input id="" type="text" required aria-describedby="emailHelp">
+                      <label id="formularioB" alt="label" data-placeholder="Dirección"></label>
+                    </div>
+                  </div>
+
+                <!-- </div> -->
+
+              </div>
+
+            </form>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>

@@ -1,0 +1,59 @@
+.form-row {
+    /* margin-bottom: 1rem; */
+    position: relative;
+    margin-bottom: .3rem;
+}
+
+
+
+.form-row input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px;
+    color: var(--cielo);
+    border: 2px solid var(--cielo);
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    outline: 0;
+}
+
+.form-row input + label {
+    pointer-events: none;
+}
+
+.form-row input + label:after {
+    content: attr(data-placeholder);
+    display: block;
+    position: absolute;
+    /* top: 35%; */
+    left: 1rem;
+    transform: translate(0%, -50%);
+    transition: all 0.5s ease-in-out;
+    padding: 0 0.25rem;
+}
+
+#formularioA::after{
+    top: 10%;
+}
+
+#formularioB::after{
+    top: 35%;
+}
+
+#formularioC::after{
+    top:60%
+}
+
+#formularioD::after{
+    top: 85%;
+}
+
+.form-row input:focus, form .form-row input:valid {
+    border: 2px solid var(--dorado);
+}
+
+.form-row input:focus + label:after, form .form-row input:valid + label:after {
+    transform: translate(-5%, -150%) scale(0.9, 0.9);
+    color: var(--dorado);
+    background-color: white;
+}

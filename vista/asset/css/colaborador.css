@@ -1,0 +1,23 @@
+#colaborador{
+    margin-top: 7rem;
+    margin-left: 25%;
+}
+
+.colaborador{
+    margin-top: 4rem;
+}
+
+.fecha{
+    /* float: right; */
+    margin-top: -3%;
+    /* margin-left: 1%; */
+}
+
+#fecha{
+    margin-left: 2%;
+    width: 90px;
+}
+
+#formulario{
+    margin-top: 2rem;
+}

@@ -5,3 +5,55 @@
     --obscuro: rgb(66,66,66);
     --claro: rgb(84,84,84);
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo{
+    color: var(--rey);
+    margin-left: 10%;
+}
+
+.menu__izq{
+    position: fixed;
+    margin-top: 5%;
+    /* margin-left: 10px; */
+    /* background-color: var(--dorado); */
+    padding-top: 1%;
+    color: var(--obscuro)!important;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.izquierda{
+    text-transform: uppercase;
+    list-style: none;
+    z-index: 10;
+}
+
+.izq__cubo{
+    padding: 0% 5%;
+}
+
+.izq__flecha{
+    float: right;
+}
+
+.izquierda li a{
+    background-color:var(--dorado);
+    color: var(--obscuro);
+    padding: 4px 10px;
+    display: block;
+}
+
+.izquierda li a:hover{
+    background-color: var(--cielo);
+    color: white;
+}
+
+.textoGeneral{
+    color: var(--rey);
+    text-transform: uppercase;
+}
